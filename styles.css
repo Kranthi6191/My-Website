@@ -1,0 +1,88 @@
+/* Apply a background color to the body */
+body {
+  background-color: #f2f2f2;
+}
+
+/* Add styles to the main heading */
+h1 {
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+}
+
+/* Add styles to the menu links */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+/* Add styles to the page headings */
+h2, h3 {
+  margin: 20px;
+}
+
+/* Add styles to the images */
+img {
+  display: block;
+  margin: auto;
+  padding: 10px;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Add styles to the hr */
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 20px 0;
+}
+
+/* Add styles to the table */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: #333;
+  color: white;
+}
+
+/* Add styles to the grid */
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.box {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+}
