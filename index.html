@@ -5,36 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kranthi Kumar Erra - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts.js"></script>
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1>Kranthi Kumar Erra</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <section id="about" class="section">
         <div class="container">
             <h1>About Me</h1>
-            <p>Hi, I'm Kranthi Kumar Erra, UI/UX designer with a passion for creating intuitive and engaging user experiences. As I embark on this exciting journey, I'm eager to apply my design skills and continue learning from every project.</p>
-                <p>My journey into UI/UX design started with a fascination for how users interact with digital products. I believe that great design is not only about aesthetics but also about understanding user needs and behaviors to create seamless and enjoyable experiences.</p>
-                <h3>Skills and Expertise</h3>
-                <ul>
-                    <li>Wireframing and Prototyping</li>
-                    <li>User Research and Personas</li>
-                    <li>Information Architecture</li>
-                    <li>Interaction Design</li>
-                    <li>Usability Testing</li>
-                </ul>
-                <h3>Education and Training</h3>
-                <p>Currently enrolled in the MA Human Computer Interaction program at SUNY Oswego</p>
-                <p>Bachelors of commerce from Kalinga University</p>
-                <h3>Projects and Experience</h3>
-                <p>While I'm new to the field, I have already completed several personal projects and collaborated on design challenges that allowed me to apply my skills in real-world scenarios.</p>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Hi, I'm Kranthi Kumar Erra, an aspiring UI/UX designer passionate about creating engaging user experiences. I am excited to share my journey and the projects that have shaped my skills in UI/UX design.</p>
+                    <p>I believe that design is more than just aesthetics; it's about understanding users and crafting solutions that meet their needs. My goal is to combine creativity and functionality to create intuitive and enjoyable digital experiences.</p>
+                    <h3>Skills and Expertise</h3>
+                    <ul>
+                        <li>Wireframing and Prototyping</li>
+                        <li>User Research and Personas</li>
+                        <li>Information Architecture</li>
+                        <li>Interaction Design</li>
+                        <li>Usability Testing</li>
+                    </ul>
+                </div>
+                <div class="about-photo">
+                    <img src="https://media.licdn.com/dms/image/D5603AQEUxzwoKyQ5eg/profile-displayphoto-shrink_400_400/0/1714093305561?e=1722470400&v=beta&t=M1zTjDpcBF_qw7iZOfp8TejbSB9CCkIkWsCJIDWO968" alt="Kranthi Kumar Erra">
+                </div>
+            </div>
         </div>
     </section>
 
@@ -43,24 +49,16 @@
             <h1>Portfolio</h1>
             <div class="portfolio-grid">
                 <div class="portfolio-item">
-                    <img src="portfolio-item1.jpg" alt="Portfolio Item 1">
-                    <h3>Budget Management App</h3>
-                    <p>Budget management tool for college students and all the other age groups</p>
-<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FOtWdVid9Zkv0QuPdZXXV1g%2FKranthi---budget-app%3Fnode-id%3D0-4718%26starting-point-node-id%3D0%253A4718%26t%3DYOgVAwkw5afXhYBI-1" allowfullscreen></iframe>                <div class="portfolio-item">
-                    <img src="portfolio-item2.jpg" alt="Portfolio Item 2">
-                    <h3>Better Color</h3>
-                    <p>Color Blindness help app 2</p>
-<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fhkw27XbBwLEC2FyCFavF5J%2FHCI-510-Wireframe-(1)%3Fnode-id%3D121-42%26starting-point-node-id%3D121%253A42%26t%3Dwac1UjfH5msUWvz1-1" allowfullscreen></iframe>                </div>
-                <!-- Add more portfolio items as needed -->
+                    <iframe width="560" height="315" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FOtWdVid9Zkv0QuPdZXXV1g%2FKranthi---budget-app%3Fnode-id%3D0-4718%26starting-point-node-id%3D0%253A4718%26t%3DYOgVAwkw5afXhYBI-1" allowfullscreen></iframe>
+                    <h3>Mobile App Redesign</h3>
+                    <p>Improved user engagement and usability through user research and high-fidelity prototyping.</p>
+                </div>
+                <div class="portfolio-item">
+                    <iframe width="560" height="315" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fhkw27XbBwLEC2FyCFavF5J%2FHCI-510-Wireframe-(1)%3Fnode-id%3D121-42%26starting-point-node-id%3D121%253A42%26t%3Dwac1UjfH5msUWvz1-1" allowfullscreen></iframe>
+                    <h3>E-commerce Website UX Overhaul</h3>
+                    <p>Enhanced shopping experience by simplifying navigation and improving the checkout process.</p>
+                </div>
             </div>
-        </div>
-    </section>
-
-    <section id="contact" class="section">
-        <div class="container">
-            <h1>Contact Me</h1>
-            <p>Email: Kranthikumar6191@gmail.com</p>
-            <p>Phone: 680-800-7779</p>
         </div>
     </section>
 
@@ -69,12 +67,5 @@
             <p>&copy; 2024 Kranthi Kumar Erra. All rights reserved.</p>
         </div>
     </footer>
-
-    <div id="modal-container"></div>
-
-    <script src="script.js"></script>
 </body>
-    
-    
-    
 </html>
