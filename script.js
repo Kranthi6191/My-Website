@@ -8,6 +8,27 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+// Transition effects for sections
+const sections = document.querySelectorAll('.section');
+const options = {
+    threshold: 0.1,
+    rootMargin: "0px 0px -10% 0px"
+};
+
+const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+        }
+    });
+}, options);
+
+sections.forEach(section => {
+    section.classList.add('hidden');
+    observer.observe(section);
+});
+
 
 // Image gallery
 const portfolioItems = document.querySelectorAll('.portfolio-item img');
