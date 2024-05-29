@@ -140,14 +140,16 @@ footer p {
     margin: 0;
 }
 
-/* Smooth graphical transitions */
-.section.hidden {
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+/* Smooth transitions */
+html {
+    scroll-behavior: smooth;
 }
 
-.section.visible {
-    opacity: 1;
-    transform: translateY(0);
+a {
+    transition: color 0.3s, transform 0.3s;
+}
+
+a:hover {
+    color: #ddd;
+    transform: scale(1.1);
 }
