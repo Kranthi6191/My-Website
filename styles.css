@@ -124,6 +124,13 @@ nav ul li a:hover {
     margin: 10px 0;
 }
 
+/* Contact section */
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
 /* Footer */
 footer {
     background-color: #222;
