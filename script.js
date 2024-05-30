@@ -29,7 +29,6 @@ sections.forEach(section => {
     observer.observe(section);
 });
 
-
 // Image gallery
 const portfolioItems = document.querySelectorAll('.portfolio-item img');
 portfolioItems.forEach(img => {
@@ -49,5 +48,25 @@ portfolioItems.forEach(img => {
         closeBtn.addEventListener('click', function() {
             modalContainer.removeChild(modal);
         });
+    });
+});
+
+// Lazy loading iframes
+document.addEventListener("DOMContentLoaded", function() {
+    const iframes = document.querySelectorAll('iframe[data-src]');
+
+    const iframeObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const iframe = entry.target;
+                iframe.src = iframe.getAttribute('data-src');
+                iframe.removeAttribute('data-src');
+                observer.unobserve(iframe);
+            }
+        });
+    });
+
+    iframes.forEach(iframe => {
+        iframeObserver.observe(iframe);
     });
 });
