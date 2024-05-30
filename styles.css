@@ -21,41 +21,25 @@ header {
     background-color: #333;
     color: white;
     padding: 1em 0;
-}
-
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.header-container {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    text-align: center;
+    position: relative;
 }
 
 .header-left {
-    margin-bottom: 1em;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
 }
 
-.header-left h1 {
-    font-size: 2em;
-    margin: 0;
-}
-
-.header-left h2 {
-    font-size: 1.2em;
+.header-left h1, .header-left h2 {
     margin: 0;
 }
 
 .header-right {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 600px;
-    margin-top: 1em;
+    margin-left: auto;
 }
 
 .header-right ul {
@@ -63,8 +47,7 @@ header {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: space-between;
-    width: 100%;
+    gap: 20px;
 }
 
 .header-right ul li {
