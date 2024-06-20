@@ -44,11 +44,15 @@ document.addEventListener("DOMContentLoaded", function() {
                 </div>
             `;
             modalContainer.appendChild(modal);
+            modalContainer.style.display = 'flex';
         }
         
         if (e.target.classList.contains('close')) {
             const modal = e.target.closest('.modal');
             modalContainer.removeChild(modal);
+            if (!modalContainer.hasChildNodes()) {
+                modalContainer.style.display = 'none';
+            }
         }
     });
 
