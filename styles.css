@@ -170,50 +170,55 @@ footer p {
     margin: 0;
 }
 
-/* Smooth transitions */
-a {
-    transition: color 0.3s, transform 0.3s;
+/* Smooth transitions for sections */
+.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
-a:hover {
-    color: #ddd;
-    transform: scale(1.1);
+.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
-/* Media Queries for mobile responsiveness */
-@media (max-width: 768px) {
-    .contact-content {
-        flex-direction: column;
-        gap: 1em;
-    }
-
-    .contact-item {
-        width: 100%;
-    }
-
-    .header-left {
-        align-items: center;
-    }
-
-    .header-right ul {
-        flex-direction: column;
-        align-items: center;
-        gap: 0.5em;
-    }
-
-    .about-content {
-        flex-direction: column;
-    }
-
-    .about-photo {
-        margin-top: 1em;
-    }
-
-    .portfolio-grid {
-        grid-template-columns: 1fr;
-    }
-
-    footer {
-        position: relative;
-    }
+/* Modal styles */
+#modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    display: none; /* Initially hidden */
 }
+
+.modal {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.modal-content {
+    text-align: center;
+}
+
+.modal-content img {
+    max-width: 100%;
+    height: auto;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
